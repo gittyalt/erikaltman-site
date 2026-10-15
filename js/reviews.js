@@ -70,7 +70,10 @@
         more.textContent = open ? 'Show less' : 'Read more';
       });
       c.append(more);
-      requestAnimationFrame(() => { if (p.scrollHeight > p.clientHeight + 2) more.hidden = false; });
+      const check = () => { if (!p.classList.contains('is-open')) more.hidden = !(p.scrollHeight > p.clientHeight + 2); };
+      if ('ResizeObserver' in window) new ResizeObserver(check).observe(p);
+      requestAnimationFrame(check);
+      window.addEventListener('load', check);
     }
 
     const author = el('div', 'review-author');
