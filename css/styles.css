@@ -79,6 +79,20 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   line-height: 1;
   color: var(--slate);
   text-transform: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.nav-mark {
+  height: 40px;
+  width: auto;
+  flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+  .nav-logo { font-size: 26px; gap: 10px; }
+  .nav-mark { height: 32px; }
 }
 
 .nav-links {
