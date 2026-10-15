@@ -498,7 +498,36 @@ main { padding-top: var(--nav-height); }
   -webkit-line-clamp: 9;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  white-space: pre-line;
 }
+.review-text.is-open {
+  display: block;
+  -webkit-line-clamp: unset;
+  overflow: visible;
+}
+.review-more {
+  align-self: flex-start;
+  margin: -12px 0 24px;
+  padding: 2px 0;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--slate);
+  border-bottom: 1px solid var(--canyon-brick);
+}
+.review-more:hover { color: var(--canyon-brick); }
+.review-more:focus-visible { outline: 2px solid var(--canyon-brick); outline-offset: 3px; }
+.review-initials {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--limestone-deep);
+  color: var(--slate);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+}
+.reviews-track { align-items: flex-start; }
 .review-avatar {
   width: 32px;
   height: 32px;
