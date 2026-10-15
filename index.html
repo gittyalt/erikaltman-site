@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Serif+Display:ital@0;1&family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,400..900,0..100,0..1;1,9..144,400..900,0..100,0..1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=20261015d">
+  <link rel="stylesheet" href="css/styles.css?v=20261015e">
 </head>
 <body>
 
@@ -81,7 +81,7 @@
     </section>
 
     <!-- REVIEWS -->
-    <section class="section" id="reviews" style="padding-top:0; padding-bottom:0;">
+    <section class="section" id="reviews" style="padding-top:0; padding-bottom:0;" hidden>
       <div class="reviews">
         <div class="reviews-inner">
           <div class="section-header" style="margin-bottom:0; border-bottom:none; padding-bottom:0;">
@@ -100,32 +100,12 @@
           </div>
           <div class="carousel">
             <div class="reviews-track" data-carousel>
-              <div class="review-card">
-                <div class="review-stars">★★★★★</div>
-                <p class="review-text">"Erik's knowledge of Marin and his calm guidance through every step made our sale feel almost effortless. He understands construction, design, and value in a way few agents do."</p>
-                <div class="review-author">Sellers · Greenbrae</div>
-              </div>
-              <div class="review-card">
-                <div class="review-stars">★★★★★</div>
-                <p class="review-text">"From the first walkthrough to closing, Erik was thoughtful, responsive, and always one step ahead. He found us the home we didn't know we were looking for."</p>
-                <div class="review-author">Buyers · San Anselmo</div>
-              </div>
-              <div class="review-card">
-                <div class="review-stars">★★★★★</div>
-                <p class="review-text">"Erik's background in development is a real advantage. He helped us see the potential of a property no one else did, and walked us through every code and permit consideration."</p>
-                <div class="review-author">Buyers · Kentfield</div>
-              </div>
-              <div class="review-card">
-                <div class="review-stars">★★★★★</div>
-                <p class="review-text">"Professional, deeply informed, and an absolute pleasure to work with. Erik treated our home like his own."</p>
-                <div class="review-author">Sellers · Mill Valley</div>
-              </div>
-              <div class="review-card">
-                <div class="review-stars">★★★★★</div>
-                <p class="review-text">"The marketing was extraordinary — photography, staging, positioning. We sold above asking in a soft market because of Erik's strategy."</p>
-                <div class="review-author">Sellers · Ross</div>
-              </div>
+              <!-- Filled from Google by js/reviews.js -->
             </div>
+          </div>
+          <div class="reviews-attrib">
+            <span class="reviews-summary" data-reviews-summary></span>
+            <a class="reviews-all" data-reviews-link href="#" target="_blank" rel="noopener">See all reviews on Google Maps</a>
           </div>
         </div>
       </div>
@@ -180,6 +160,7 @@
   </footer>
 
   <script src="js/site.js"></script>
+  <script src="js/reviews.js?v=20261015a" defer></script>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
     renderPropertiesCarousel('#home-properties');

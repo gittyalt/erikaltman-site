@@ -489,7 +489,47 @@ main { padding-top: var(--nav-height); }
   color: var(--slate-soft);
   padding-top: 18px;
   border-top: 1px solid var(--hairline);
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
+.review-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 9;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.review-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.review-who { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.review-name { color: var(--slate); }
+a.review-name:hover { color: var(--canyon-brick); }
+.review-date { font-size: 11px; letter-spacing: 0.08em; text-transform: none; }
+
+.reviews-attrib {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px 24px;
+  margin-top: 24px;
+  font-size: 13px;
+  color: var(--slate-soft);
+}
+.reviews-all {
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--slate);
+  border-bottom: 1px solid var(--canyon-brick);
+  padding-bottom: 2px;
+}
+.reviews-all:hover { color: var(--canyon-brick); }
 
 /* ============================================================
    INSTAGRAM FEED
