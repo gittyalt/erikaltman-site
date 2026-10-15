@@ -85,14 +85,32 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 
 .nav-mark {
-  height: 40px;
+  height: 50px;
   width: auto;
   flex-shrink: 0;
 }
 
+.nav-logo-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.nav-tagline {
+  font-family: 'Fraunces', Georgia, serif;
+  font-variation-settings: 'opsz' 14;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  color: var(--slate-soft);
+  white-space: nowrap;
+}
+
 @media (max-width: 600px) {
   .nav-logo { font-size: 26px; gap: 10px; }
-  .nav-mark { height: 32px; }
+  .nav-mark { height: 40px; }
+  .nav-tagline { font-size: 11.5px; }
 }
 
 .nav-links {
