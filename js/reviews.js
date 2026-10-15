@@ -19,9 +19,9 @@
   // Google Place ID for Erik Altman Properties.
   const PLACE_ID = 'ChIJsU1W-oR5OakR91dSJVthaXY';
   // Display order by reviewer name. Anyone not listed goes after these.
-  const ORDER = ['Eric Englund', 'Ashley Busacca', 'Ryan Darcey', 'Christopher Westcott', 'Emily Flynn', 'Richard H'];
+  const ORDER = ['Eric Englund', 'Ashley Busacca', 'Ryan Darcey', 'Christopher Westcott', 'Emily Flynn', 'Richard H', 'Brittany Bafandeh', 'Aaron Tidman'];
   // Reviewers to leave out of the carousel.
-  const HIDE = ['Aaron Tidman', 'Morgan Shorum'];
+  const HIDE = ['Morgan Shorum'];
 
   const section = document.getElementById('reviews');
   if (!section) return;
