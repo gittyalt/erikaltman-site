@@ -148,16 +148,26 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 .nav-toggle {
   display: none;
-  width: 28px; height: 28px;
+  position: relative;
+  z-index: 2;
+  width: 44px; height: 44px;
+  margin-right: -8px;
+  padding: 0 8px;
   flex-direction: column;
   justify-content: center;
   gap: 5px;
+  flex-shrink: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 .nav-toggle span {
+  display: block;
   height: 1.5px;
   background: var(--slate);
-  transition: 0.3s;
+  transition: transform 0.3s ease, opacity 0.2s ease;
 }
+.nav-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+.nav-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+.nav-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
 
 /* ============================================================
    LAYOUT PRIMITIVES
@@ -929,19 +939,39 @@ a.review-name:hover { color: var(--canyon-brick); }
   :root { --nav-height: 64px; }
 
   .nav-toggle { display: flex; }
+  .nav-logo { min-width: 0; }
   .nav-links {
-    position: fixed;
-    top: var(--nav-height); left: 0; right: 0;
+    /* .nav's backdrop-filter makes it the containing block, so anchor
+       the panel to the bottom edge of the bar rather than the viewport */
+    position: absolute;
+    top: 100%; left: 0; right: 0;
     background: var(--limestone);
     flex-direction: column;
-    padding: 30px var(--gutter);
-    gap: 22px;
-    transform: translateY(-110%);
-    transition: transform 0.4s cubic-bezier(.2,.7,.2,1);
+    align-items: flex-start;
+    padding: 12px var(--gutter) 28px;
+    gap: 6px;
     border-bottom: 1px solid var(--hairline);
+    box-shadow: 0 18px 30px -24px rgba(58, 66, 72, 0.45);
+    max-height: calc(100vh - var(--nav-height));
+    max-height: calc(100dvh - var(--nav-height));
+    overflow-y: auto;
+    /* fully hidden when closed — never overlaps the header */
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-8px);
+    pointer-events: none;
+    transition: opacity 0.25s ease, transform 0.3s cubic-bezier(.2,.7,.2,1), visibility 0s linear 0.3s;
   }
-  .nav-links.open { transform: translateY(0); }
-  .nav-links a { font-size: 14px; }
+  .nav-links.open {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+    transition: opacity 0.25s ease, transform 0.3s cubic-bezier(.2,.7,.2,1), visibility 0s;
+  }
+  .nav-links li { width: 100%; }
+  .nav-links a { display: inline-block; font-size: 14px; padding: 12px 0; }
+  .nav-links a::after { bottom: 8px; }
 
   .intro { grid-template-columns: 1fr; min-height: auto; padding-top: 20px; }
   .intro-portrait { aspect-ratio: 1; max-height: 70vh; }
