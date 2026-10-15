@@ -440,7 +440,7 @@ main { padding-top: var(--nav-height); }
 .reviews {
   background: var(--limestone-deep);
   padding: clamp(40px, 5vw, 70px) 0;
-  margin: clamp(30px, 4vw, 60px) calc(-1 * var(--gutter));
+  margin: 0 calc(-1 * var(--gutter));
   position: relative;
 }
 .reviews-inner {
