@@ -8,7 +8,7 @@
   // Browser key: restrict it to erikaltman.com in Google Cloud.
   const GOOGLE_MAPS_KEY = 'AIzaSyAwd3BZmpwI4WkLIssLC_kJV2Cb5YcYBGs';
   // Erik's Google Business Profile Place ID (starts with "ChIJ").
-  const PLACE_ID = '';
+  const PLACE_ID = 'ChIJsU1W-oR5OakR91dSJVthaXY';
 
   const section = document.getElementById('reviews');
   if (!section || !GOOGLE_MAPS_KEY || !PLACE_ID) return;
