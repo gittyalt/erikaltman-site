@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" preserveAspectRatio="xMidYMid slice">
+  <rect width="800" height="800" fill="#F7F2E8"/>
+  <!-- Counter -->
+  <rect y="500" width="800" height="40" fill="#3A4248"/>
+  <!-- Backsplash tiles -->
+  <g fill="#E5DCCB" stroke="#D4C8B3" stroke-width="2">
+    <rect x="0" y="200" width="80" height="80"/>
+    <rect x="80" y="200" width="80" height="80"/>
+    <rect x="160" y="200" width="80" height="80"/>
+    <rect x="240" y="200" width="80" height="80"/>
+    <rect x="320" y="200" width="80" height="80"/>
+    <rect x="400" y="200" width="80" height="80"/>
+    <rect x="480" y="200" width="80" height="80"/>
+    <rect x="560" y="200" width="80" height="80"/>
+    <rect x="640" y="200" width="80" height="80"/>
+    <rect x="720" y="200" width="80" height="80"/>
+    <rect x="0" y="280" width="80" height="80"/>
+    <rect x="80" y="280" width="80" height="80"/>
+    <rect x="160" y="280" width="80" height="80"/>
+    <rect x="240" y="280" width="80" height="80"/>
+    <rect x="320" y="280" width="80" height="80"/>
+    <rect x="400" y="280" width="80" height="80"/>
+    <rect x="480" y="280" width="80" height="80"/>
+    <rect x="560" y="280" width="80" height="80"/>
+    <rect x="640" y="280" width="80" height="80"/>
+    <rect x="720" y="280" width="80" height="80"/>
+    <rect x="0" y="360" width="80" height="80"/>
+    <rect x="80" y="360" width="80" height="80"/>
+    <rect x="160" y="360" width="80" height="80"/>
+    <rect x="240" y="360" width="80" height="80"/>
+    <rect x="320" y="360" width="80" height="80"/>
+    <rect x="400" y="360" width="80" height="80"/>
+    <rect x="480" y="360" width="80" height="80"/>
+    <rect x="560" y="360" width="80" height="80"/>
+    <rect x="640" y="360" width="80" height="80"/>
+    <rect x="720" y="360" width="80" height="80"/>
+  </g>
+  <rect y="100" width="800" height="100" fill="#E5DCCB"/>
+  <rect y="540" width="800" height="260" fill="#C8B89A"/>
+  <!-- Vase with branches -->
+  <ellipse cx="300" cy="490" rx="35" ry="15" fill="#1F2428"/>
+  <rect x="265" y="380" width="70" height="120" fill="#2A3036"/>
+  <line x1="300" y1="380" x2="290" y2="180" stroke="#5C4A38" stroke-width="3"/>
+  <line x1="290" y1="180" x2="260" y2="120" stroke="#5C4A38" stroke-width="2"/>
+  <line x1="290" y1="180" x2="320" y2="140" stroke="#5C4A38" stroke-width="2"/>
+  <line x1="300" y1="380" x2="320" y2="220" stroke="#5C4A38" stroke-width="3"/>
+  <line x1="320" y1="220" x2="340" y2="160" stroke="#5C4A38" stroke-width="2"/>
+  <!-- Bowl -->
+  <ellipse cx="550" cy="490" rx="60" ry="15" fill="#B05A3C"/>
+  <path d="M 490 490 Q 490 540 550 540 Q 610 540 610 490 Z" fill="#B05A3C"/>
+  <ellipse cx="550" cy="490" rx="55" ry="12" fill="#F7F2E8" opacity="0.3"/>
+</svg>

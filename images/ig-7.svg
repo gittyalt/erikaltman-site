@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="ig7" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#B8C5D0"/>
+      <stop offset="100%" stop-color="#7B8590"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#ig7)"/>
+  <!-- Hills across the bay -->
+  <path d="M 0 350 Q 200 280 400 320 T 800 340 L 800 500 L 0 500 Z" fill="#5C6E5A" opacity="0.6"/>
+  <path d="M 0 420 Q 300 360 600 400 T 800 410 L 800 500 L 0 500 Z" fill="#455444" opacity="0.8"/>
+  <!-- Water -->
+  <rect y="500" width="800" height="300" fill="#5B6469"/>
+  <g stroke="#7B8590" stroke-width="2" opacity="0.5" fill="none">
+    <path d="M 0 550 Q 100 545 200 550 T 400 550 T 600 550 T 800 550"/>
+    <path d="M 0 600 Q 100 595 200 600 T 400 600 T 600 600 T 800 600"/>
+    <path d="M 0 650 Q 100 645 200 650 T 400 650 T 600 650 T 800 650"/>
+    <path d="M 0 700 Q 100 695 200 700 T 400 700 T 600 700 T 800 700"/>
+  </g>
+  <!-- Boats / sailboats -->
+  <g>
+    <polygon points="200,480 200,400 260,480" fill="#F7F2E8"/>
+    <polygon points="200,480 230,500 200,500" fill="#3A4248"/>
+    <line x1="200" y1="480" x2="200" y2="395" stroke="#1F2428" stroke-width="2"/>
+  </g>
+  <g>
+    <polygon points="350,500 350,440 400,500" fill="#F7F2E8" opacity="0.9"/>
+    <polygon points="350,500 380,515 350,515" fill="#3A4248"/>
+    <line x1="350" y1="500" x2="350" y2="435" stroke="#1F2428" stroke-width="2"/>
+  </g>
+  <g>
+    <polygon points="550,490 550,420 615,490" fill="#F7F2E8"/>
+    <polygon points="550,490 585,510 550,510" fill="#3A4248"/>
+    <line x1="550" y1="490" x2="550" y2="415" stroke="#1F2428" stroke-width="2"/>
+  </g>
+  <!-- Dock -->
+  <rect y="540" width="800" height="20" fill="#5C4A38"/>
+  <rect x="100" y="540" width="8" height="60" fill="#3A2F22"/>
+  <rect x="300" y="540" width="8" height="60" fill="#3A2F22"/>
+  <rect x="500" y="540" width="8" height="60" fill="#3A2F22"/>
+  <rect x="700" y="540" width="8" height="60" fill="#3A2F22"/>
+</svg>

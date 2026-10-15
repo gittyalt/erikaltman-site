@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" preserveAspectRatio="xMidYMid slice">
+<defs><linearGradient id="hy" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#C8B89A"/><stop offset="1" stop-color="#E5DCCB"/></linearGradient></defs>
+<rect width="1200" height="900" fill="url(#hy)"/>
+<rect y="780" width="1200" height="120" fill="#8E8A85"/>
+<!-- Edwardian SF flat -->
+<rect x="200" y="160" width="800" height="620" fill="#F0E8DC"/>
+<!-- Decorative cornice -->
+<rect x="180" y="140" width="840" height="30" fill="#E5D8C0"/>
+<rect x="180" y="170" width="840" height="8" fill="#8E8278"/>
+<!-- Bay window middle -->
+<polygon points="450,260 750,260 720,320 480,320" fill="#F7F2E8"/>
+<rect x="470" y="320" width="260" height="220" fill="#F7F2E8"/>
+<rect x="490" y="280" width="80" height="60" fill="#7B8590" opacity="0.7"/>
+<rect x="580" y="280" width="80" height="60" fill="#7B8590" opacity="0.7"/>
+<rect x="670" y="280" width="80" height="60" fill="#7B8590" opacity="0.7"/>
+<rect x="490" y="360" width="80" height="160" fill="#7B8590" opacity="0.7"/>
+<rect x="580" y="360" width="80" height="160" fill="#7B8590" opacity="0.7"/>
+<rect x="670" y="360" width="80" height="160" fill="#7B8590" opacity="0.7"/>
+<!-- Side windows top floor -->
+<rect x="260" y="280" width="100" height="180" fill="#7B8590" opacity="0.7"/>
+<rect x="840" y="280" width="100" height="180" fill="#7B8590" opacity="0.7"/>
+<line x1="310" y1="280" x2="310" y2="460" stroke="#3A2F22" stroke-width="2"/>
+<line x1="890" y1="280" x2="890" y2="460" stroke="#3A2F22" stroke-width="2"/>
+<!-- Decorative trim -->
+<g stroke="#8E8278" stroke-width="2">
+<line x1="200" y1="500" x2="1000" y2="500"/>
+<line x1="200" y1="510" x2="1000" y2="510"/>
+</g>
+<!-- Ground floor with stairs and door -->
+<rect x="200" y="540" width="800" height="240" fill="#E5D8C0"/>
+<!-- Entry stairway -->
+<polygon points="540,640 660,640 700,780 500,780" fill="#9C9088"/>
+<g stroke="#6E6258" stroke-width="2">
+<line x1="510" y1="700" x2="690" y2="700"/>
+<line x1="505" y1="740" x2="695" y2="740"/>
+</g>
+<!-- Front door at top of stairs -->
+<rect x="560" y="540" width="80" height="100" fill="#B05A3C"/>
+<rect x="570" y="560" width="60" height="40" fill="#E8B872" opacity="0.7"/>
+<!-- Garage doors -->
+<rect x="240" y="640" width="240" height="140" fill="#3A2F22"/>
+<g stroke="#1F2428" stroke-width="1">
+<line x1="240" y1="670" x2="480" y2="670"/>
+<line x1="240" y1="700" x2="480" y2="700"/>
+<line x1="240" y1="730" x2="480" y2="730"/>
+<line x1="240" y1="760" x2="480" y2="760"/>
+</g>
+<rect x="720" y="640" width="240" height="140" fill="#3A2F22"/>
+<g stroke="#1F2428" stroke-width="1">
+<line x1="720" y1="670" x2="960" y2="670"/>
+<line x1="720" y1="700" x2="960" y2="700"/>
+<line x1="720" y1="730" x2="960" y2="730"/>
+<line x1="720" y1="760" x2="960" y2="760"/>
+</g>
+<!-- Street tree -->
+<rect x="80" y="640" width="8" height="160" fill="#3A2F22"/>
+<ellipse cx="84" cy="600" rx="60" ry="90" fill="#5C6E5A"/>
+</svg>

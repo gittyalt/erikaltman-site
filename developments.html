@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developments — Erik Altman</title>
+  <meta name="description" content="Development projects led by Erik Altman: ground-up residential development, renovations, and value-add real estate in Marin County and the Bay Area.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Serif+Display:ital@0;1&family=Fraunces:opsz,wght,SOFT,WONK@9..144,400..900,0..100,0..1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Erik Altman</a>
+      <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+      <ul class="nav-links">
+        <li><a href="index.html">Meet Erik</a></li>
+        <li><a href="properties.html">Properties</a></li>
+        <li><a href="marintel.html">MarIntel</a></li>
+        <li><a href="developments.html" class="active">Developments</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="section">
+      <div class="section-header">
+        <div>
+          <div class="eyebrow fade-up">Ground-Up · Renovation · Value-Add</div>
+          <h1 class="h-display fade-up d1">Developments</h1>
+        </div>
+        <p class="body-text fade-up d2" style="max-width:38ch;">
+          Projects led with the family development company. End-to-end management from feasibility and entitlement through construction and final delivery.
+        </p>
+      </div>
+
+      <div class="properties-grid fade-up d2" id="developments-grid"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-logo">ERIK ALTMAN</div>
+        <p class="footer-tagline">Marin County real estate, considered with care.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:4156719923">415.671.9923</a></li>
+          <li><a href="mailto:erik@boulevardmarin.com">erik@boulevardmarin.com</a></li>
+          <li>DRE# 02212282</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/erikaltmanproperties/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.linkedin.com/in/erik-altman/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="contact.html">Get in Touch</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Erik Altman · All Rights Reserved</span>
+      <span>Boulevard Real Estate · CA DRE# 02014153</span>
+    </div>
+  </footer>
+
+  <script src="js/site.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    renderDevelopmentsGrid('#developments-grid');
+  </script>
+</body>
+</html>

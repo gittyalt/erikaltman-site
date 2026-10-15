@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" preserveAspectRatio="xMidYMid slice">
+<defs><linearGradient id="vn403" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#A8B8C8"/><stop offset="1" stop-color="#D8DDE0"/></linearGradient></defs>
+<rect width="1200" height="900" fill="url(#vn403)"/>
+<rect y="780" width="1200" height="120" fill="#8E8A85"/>
+<line x1="0" y1="810" x2="1200" y2="810" stroke="#6E6A65" stroke-width="2"/>
+<!-- Adjacent buildings -->
+<rect x="0" y="240" width="180" height="560" fill="#C4B8A4"/>
+<rect x="1020" y="180" width="180" height="620" fill="#A8B0A6"/>
+<!-- 5-story boutique mid-rise -->
+<rect x="180" y="80" width="840" height="700" fill="#2A3036"/>
+<rect x="180" y="80" width="840" height="40" fill="#1F2428"/>
+<!-- Storefront entry ground floor -->
+<rect x="220" y="620" width="760" height="160" fill="#1F2428"/>
+<rect x="450" y="640" width="300" height="140" fill="#3A2F22"/>
+<rect x="460" y="650" width="280" height="20" fill="#E8B872" opacity="0.8"/>
+<rect x="240" y="640" width="180" height="140" fill="#3A4248"/>
+<rect x="780" y="640" width="180" height="140" fill="#3A4248"/>
+<!-- Repeating floors of bay windows / picture windows -->
+<!-- Floor 5 -->
+<rect x="220" y="140" width="170" height="90" fill="#E8B872" opacity="0.5"/>
+<rect x="410" y="140" width="170" height="90" fill="#E8B872" opacity="0.55"/>
+<rect x="600" y="140" width="170" height="90" fill="#E8B872" opacity="0.5"/>
+<rect x="790" y="140" width="190" height="90" fill="#E8B872" opacity="0.6"/>
+<!-- Floor 4 -->
+<rect x="220" y="260" width="170" height="90" fill="#7B8590" opacity="0.55"/>
+<rect x="410" y="260" width="170" height="90" fill="#7B8590" opacity="0.6"/>
+<rect x="600" y="260" width="170" height="90" fill="#7B8590" opacity="0.55"/>
+<rect x="790" y="260" width="190" height="90" fill="#7B8590" opacity="0.6"/>
+<!-- Floor 3 - has bay window protrusion -->
+<rect x="220" y="380" width="170" height="90" fill="#E8B872" opacity="0.55"/>
+<polygon points="410,380 410,470 590,470 590,380 580,365 420,365" fill="#3A2F22"/>
+<rect x="420" y="385" width="160" height="80" fill="#7B8590" opacity="0.7"/>
+<rect x="600" y="380" width="170" height="90" fill="#7B8590" opacity="0.6"/>
+<rect x="790" y="380" width="190" height="90" fill="#E8B872" opacity="0.55"/>
+<!-- Floor 2 -->
+<rect x="220" y="500" width="170" height="90" fill="#7B8590" opacity="0.55"/>
+<rect x="410" y="500" width="170" height="90" fill="#7B8590" opacity="0.6"/>
+<rect x="600" y="500" width="170" height="90" fill="#7B8590" opacity="0.55"/>
+<rect x="790" y="500" width="190" height="90" fill="#7B8590" opacity="0.6"/>
+<!-- Wood siding panels -->
+<g fill="#8B6F52" opacity="0.85">
+<rect x="395" y="140" width="14" height="450"/>
+<rect x="585" y="140" width="14" height="450"/>
+<rect x="775" y="140" width="14" height="450"/>
+</g>
+<!-- Cornice -->
+<rect x="180" y="120" width="840" height="14" fill="#1F2428"/>
+<!-- Roof deck pergola hint -->
+<g stroke="#5C4A38" stroke-width="3" fill="none">
+<line x1="280" y1="80" x2="280" y2="40"/>
+<line x1="500" y1="80" x2="500" y2="40"/>
+<line x1="720" y1="80" x2="720" y2="40"/>
+<line x1="940" y1="80" x2="940" y2="40"/>
+<line x1="260" y1="50" x2="960" y2="50"/>
+</g>
+<!-- Street tree -->
+<rect x="60" y="640" width="6" height="170" fill="#3A2F22"/>
+<ellipse cx="63" cy="600" rx="60" ry="80" fill="#5C6E5A"/>
+<!-- Address marker -->
+<rect x="970" y="600" width="50" height="20" fill="#1F2428"/>
+</svg>

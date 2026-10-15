@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1250" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bgp" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E5DCCB"/>
+      <stop offset="100%" stop-color="#C8B89A"/>
+    </linearGradient>
+    <linearGradient id="suit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3A4248"/>
+      <stop offset="100%" stop-color="#1F2428"/>
+    </linearGradient>
+    <linearGradient id="skin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D4A484"/>
+      <stop offset="100%" stop-color="#B0815E"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="1250" fill="url(#bgp)"/>
+  <!-- Subtle background texture -->
+  <g opacity="0.08" fill="#3A4248">
+    <circle cx="200" cy="300" r="2"/>
+    <circle cx="800" cy="400" r="2"/>
+    <circle cx="300" cy="700" r="2"/>
+    <circle cx="700" cy="900" r="2"/>
+    <circle cx="500" cy="200" r="2"/>
+    <circle cx="100" cy="600" r="2"/>
+    <circle cx="900" cy="700" r="2"/>
+  </g>
+  <!-- Soft window light from upper left -->
+  <rect width="600" height="700" fill="#F7F2E8" opacity="0.15"/>
+  <!-- Shoulders / suit -->
+  <path d="M 200 1250 L 200 950 Q 250 850 380 800 L 620 800 Q 750 850 800 950 L 800 1250 Z" fill="url(#suit)"/>
+  <!-- Shirt collar -->
+  <path d="M 430 850 L 500 920 L 570 850 L 570 880 L 500 950 L 430 880 Z" fill="#F7F2E8"/>
+  <!-- Neck -->
+  <rect x="465" y="720" width="70" height="100" fill="url(#skin)"/>
+  <!-- Head -->
+  <ellipse cx="500" cy="600" rx="135" ry="170" fill="url(#skin)"/>
+  <!-- Hair -->
+  <path d="M 380 540 Q 370 430 500 410 Q 630 430 620 540 Q 615 510 580 490 Q 540 475 500 478 Q 460 475 420 490 Q 385 510 380 540 Z" fill="#3A2F22"/>
+  <!-- Hair side -->
+  <path d="M 365 540 Q 360 600 380 650 L 395 580 Q 380 560 365 540 Z" fill="#3A2F22"/>
+  <path d="M 635 540 Q 640 600 620 650 L 605 580 Q 620 560 635 540 Z" fill="#3A2F22"/>
+  <!-- Facial features (subtle, editorial) -->
+  <!-- Brow shadows -->
+  <ellipse cx="455" cy="575" rx="22" ry="6" fill="#8B6F52" opacity="0.6"/>
+  <ellipse cx="545" cy="575" rx="22" ry="6" fill="#8B6F52" opacity="0.6"/>
+  <!-- Eyes (closed/contemplative dots) -->
+  <ellipse cx="455" cy="600" rx="14" ry="3" fill="#2A2018"/>
+  <ellipse cx="545" cy="600" rx="14" ry="3" fill="#2A2018"/>
+  <!-- Nose shadow -->
+  <path d="M 500 615 L 488 680 Q 500 690 512 680 Z" fill="#A0734F" opacity="0.4"/>
+  <!-- Mouth -->
+  <path d="M 470 715 Q 500 723 530 715" stroke="#6E4A30" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- Jaw shadow -->
+  <path d="M 380 700 Q 500 800 620 700 L 615 730 Q 500 810 385 730 Z" fill="#8B6F52" opacity="0.25"/>
+  <!-- Pocket square -->
+  <rect x="600" y="950" width="40" height="50" fill="#B05A3C"/>
+  <!-- Lapel detail -->
+  <line x1="430" y1="920" x2="380" y2="1050" stroke="#1F2428" stroke-width="3"/>
+  <line x1="570" y1="920" x2="620" y2="1050" stroke="#1F2428" stroke-width="3"/>
+</svg>

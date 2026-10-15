@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" preserveAspectRatio="xMidYMid slice">
+<defs><linearGradient id="s2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#B8C8D8"/><stop offset="1" stop-color="#D8DDE0"/></linearGradient></defs>
+<rect width="1200" height="900" fill="url(#s2)"/>
+<ellipse cx="120" cy="420" rx="160" ry="220" fill="#3F4E3D" opacity="0.7"/>
+<ellipse cx="1080" cy="400" rx="180" ry="240" fill="#3F4E3D" opacity="0.7"/>
+<rect y="680" width="1200" height="220" fill="#7A8E6A"/>
+<!-- Mid-century low ranch -->
+<polygon points="180,520 600,400 1020,520 1020,560 180,560" fill="#2A3036"/>
+<rect x="220" y="560" width="760" height="180" fill="#E5D8C0"/>
+<!-- Horizontal siding -->
+<g stroke="#C8B89A" stroke-width="1" opacity="0.6">
+<line x1="220" y1="580" x2="980" y2="580"/>
+<line x1="220" y1="600" x2="980" y2="600"/>
+<line x1="220" y1="620" x2="980" y2="620"/>
+<line x1="220" y1="640" x2="980" y2="640"/>
+<line x1="220" y1="660" x2="980" y2="660"/>
+<line x1="220" y1="680" x2="980" y2="680"/>
+<line x1="220" y1="700" x2="980" y2="700"/>
+<line x1="220" y1="720" x2="980" y2="720"/>
+</g>
+<!-- Picture windows -->
+<rect x="280" y="600" width="180" height="120" fill="#7B8590" opacity="0.8"/>
+<rect x="500" y="600" width="220" height="120" fill="#7B8590" opacity="0.8"/>
+<rect x="760" y="600" width="180" height="120" fill="#7B8590" opacity="0.8"/>
+<!-- Front door -->
+<rect x="580" y="640" width="60" height="100" fill="#B05A3C"/>
+<!-- In-ground pool -->
+<rect x="350" y="780" width="500" height="80" fill="#4A6E7E" rx="8"/>
+<rect x="360" y="790" width="480" height="60" fill="#5B8595" rx="6"/>
+<!-- Lounge chairs -->
+<rect x="220" y="800" width="80" height="14" fill="#F0E8DC"/>
+<rect x="900" y="800" width="80" height="14" fill="#F0E8DC"/>
+<!-- Foreground shrubs -->
+<ellipse cx="160" cy="780" rx="80" ry="32" fill="#5C6E5A"/>
+<ellipse cx="1040" cy="780" rx="80" ry="32" fill="#5C6E5A"/>
+</svg>

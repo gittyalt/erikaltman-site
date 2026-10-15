@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" preserveAspectRatio="xMidYMid slice">
+<defs><linearGradient id="rh" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D4B89A"/><stop offset="1" stop-color="#A8856A"/></linearGradient></defs>
+<rect width="1200" height="900" fill="url(#rh)"/>
+<path d="M0 400 Q200 320 400 360 T800 350 T1200 380 L1200 600 L0 600 Z" fill="#3F4E3D" opacity="0.7"/>
+<path d="M0 480 Q300 420 600 450 T1200 470 L1200 700 L0 700 Z" fill="#455444"/>
+<rect y="700" width="1200" height="200" fill="#5C4A38"/>
+<!-- Multi-level oak-studded ridge home -->
+<polygon points="200,540 320,440 600,440 720,540 200,540" fill="#3A2F22"/>
+<polygon points="700,500 820,420 1000,420 1020,500 700,500" fill="#3A2F22"/>
+<rect x="220" y="540" width="480" height="200" fill="#E5D8C0"/>
+<rect x="700" y="500" width="320" height="240" fill="#D4C0A0"/>
+<!-- Walls of windows -->
+<rect x="260" y="580" width="380" height="120" fill="#7B8590" opacity="0.75"/>
+<g stroke="#3A2F22" stroke-width="2">
+<line x1="350" y1="580" x2="350" y2="700"/>
+<line x1="440" y1="580" x2="440" y2="700"/>
+<line x1="530" y1="580" x2="530" y2="700"/>
+</g>
+<rect x="740" y="540" width="240" height="160" fill="#7B8590" opacity="0.75"/>
+<g stroke="#3A2F22" stroke-width="2">
+<line x1="820" y1="540" x2="820" y2="700"/>
+<line x1="900" y1="540" x2="900" y2="700"/>
+</g>
+<!-- Wrap-around deck -->
+<rect x="200" y="700" width="820" height="14" fill="#5C4A38"/>
+<g stroke="#3A2F22" stroke-width="3">
+<line x1="220" y1="714" x2="220" y2="760"/>
+<line x1="260" y1="714" x2="260" y2="760"/>
+<line x1="300" y1="714" x2="300" y2="760"/>
+<line x1="340" y1="714" x2="340" y2="760"/>
+<line x1="380" y1="714" x2="380" y2="760"/>
+<line x1="420" y1="714" x2="420" y2="760"/>
+<line x1="460" y1="714" x2="460" y2="760"/>
+<line x1="500" y1="714" x2="500" y2="760"/>
+<line x1="540" y1="714" x2="540" y2="760"/>
+<line x1="600" y1="714" x2="600" y2="760"/>
+<line x1="700" y1="714" x2="700" y2="760"/>
+<line x1="740" y1="714" x2="740" y2="760"/>
+<line x1="780" y1="714" x2="780" y2="760"/>
+<line x1="820" y1="714" x2="820" y2="760"/>
+<line x1="860" y1="714" x2="860" y2="760"/>
+<line x1="900" y1="714" x2="900" y2="760"/>
+<line x1="940" y1="714" x2="940" y2="760"/>
+<line x1="980" y1="714" x2="980" y2="760"/>
+</g>
+<!-- Mature oaks -->
+<ellipse cx="100" cy="600" rx="100" ry="180" fill="#2F3A2E"/>
+<ellipse cx="1130" cy="580" rx="120" ry="200" fill="#2F3A2E"/>
+<ellipse cx="60" cy="700" rx="60" ry="80" fill="#3F4E3D"/>
+</svg>

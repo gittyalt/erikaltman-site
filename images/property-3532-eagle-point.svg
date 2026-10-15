@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" preserveAspectRatio="xMidYMid slice">
+<defs><linearGradient id="ep" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E8C895"/><stop offset="1" stop-color="#C4936A"/></linearGradient></defs>
+<rect width="1200" height="900" fill="url(#ep)"/>
+<path d="M0 440 Q200 380 400 410 T800 400 T1200 430 L1200 600 L0 600 Z" fill="#8B6F52" opacity="0.6"/>
+<path d="M0 500 Q300 460 600 480 T1200 490 L1200 660 L0 660 Z" fill="#6B4E32"/>
+<rect y="660" width="1200" height="240" fill="#7A8E6A"/>
+<!-- Mt Diablo profile silhouette -->
+<polygon points="800,440 900,360 980,420 1100,400 1200,440" fill="#5C4A38" opacity="0.8"/>
+<!-- Mid-century ranch estate -->
+<polygon points="180,540 220,500 500,500 540,540 180,540" fill="#5C4A38"/>
+<polygon points="540,540 580,470 800,470 840,540 540,540" fill="#3A2F22"/>
+<polygon points="840,540 880,500 1020,500 1020,540 840,540" fill="#5C4A38"/>
+<rect x="180" y="540" width="840" height="180" fill="#E0D4BE"/>
+<g stroke="#C4B89A" stroke-width="1" opacity="0.6">
+<line x1="180" y1="560" x2="1020" y2="560"/>
+<line x1="180" y1="580" x2="1020" y2="580"/>
+<line x1="180" y1="600" x2="1020" y2="600"/>
+<line x1="180" y1="620" x2="1020" y2="620"/>
+<line x1="180" y1="640" x2="1020" y2="640"/>
+<line x1="180" y1="660" x2="1020" y2="660"/>
+<line x1="180" y1="680" x2="1020" y2="680"/>
+<line x1="180" y1="700" x2="1020" y2="700"/>
+</g>
+<!-- Brick chimney -->
+<rect x="600" y="380" width="50" height="180" fill="#8E5E48"/>
+<g fill="#6E4A38">
+<rect x="600" y="395" width="50" height="3"/>
+<rect x="600" y="415" width="50" height="3"/>
+<rect x="600" y="435" width="50" height="3"/>
+<rect x="600" y="455" width="50" height="3"/>
+</g>
+<!-- Picture windows -->
+<rect x="220" y="560" width="200" height="140" fill="#7B8590" opacity="0.8"/>
+<rect x="460" y="560" width="100" height="140" fill="#7B8590" opacity="0.8"/>
+<rect x="700" y="560" width="120" height="140" fill="#7B8590" opacity="0.8"/>
+<rect x="860" y="560" width="140" height="140" fill="#7B8590" opacity="0.8"/>
+<!-- Center door -->
+<rect x="590" y="600" width="60" height="120" fill="#3F4E3D"/>
+<!-- Pool in foreground -->
+<rect x="300" y="780" width="600" height="80" fill="#4A6E7E" rx="10"/>
+<rect x="310" y="790" width="580" height="60" fill="#5B8595" rx="8"/>
+<!-- Pool house -->
+<rect x="80" y="700" width="120" height="80" fill="#E0D4BE"/>
+<polygon points="80,700 140,660 200,700" fill="#5C4A38"/>
+<rect x="120" y="730" width="40" height="50" fill="#7B8590" opacity="0.7"/>
+<!-- Mature trees -->
+<ellipse cx="1100" cy="620" rx="80" ry="140" fill="#3F4E3D"/>
+</svg>

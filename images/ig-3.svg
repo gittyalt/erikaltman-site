@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="ig3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D8DDE0"/>
+      <stop offset="100%" stop-color="#A8B0B5"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="800" fill="url(#ig3)"/>
+  <!-- Fog bands -->
+  <rect y="300" width="800" height="60" fill="#F7F2E8" opacity="0.3"/>
+  <rect y="380" width="800" height="40" fill="#F7F2E8" opacity="0.2"/>
+  <!-- Bridge towers (Golden Gate) -->
+  <rect x="180" y="200" width="50" height="500" fill="#B05A3C"/>
+  <rect x="570" y="200" width="50" height="500" fill="#B05A3C"/>
+  <!-- Tower crossbeams -->
+  <rect x="170" y="280" width="70" height="20" fill="#8B4527"/>
+  <rect x="170" y="380" width="70" height="20" fill="#8B4527"/>
+  <rect x="170" y="500" width="70" height="20" fill="#8B4527"/>
+  <rect x="560" y="280" width="70" height="20" fill="#8B4527"/>
+  <rect x="560" y="380" width="70" height="20" fill="#8B4527"/>
+  <rect x="560" y="500" width="70" height="20" fill="#8B4527"/>
+  <!-- Cables -->
+  <path d="M 0 600 Q 205 400 400 550 Q 595 400 800 600" stroke="#8B4527" stroke-width="4" fill="none"/>
+  <!-- Roadway -->
+  <rect y="600" width="800" height="30" fill="#3A4248"/>
+  <!-- Water -->
+  <rect y="630" width="800" height="170" fill="#5B6469"/>
+  <g stroke="#7B8590" stroke-width="1" opacity="0.6">
+    <line x1="0" y1="660" x2="800" y2="660"/>
+    <line x1="0" y1="690" x2="800" y2="690"/>
+    <line x1="0" y1="720" x2="800" y2="720"/>
+    <line x1="0" y1="750" x2="800" y2="750"/>
+  </g>
+</svg>

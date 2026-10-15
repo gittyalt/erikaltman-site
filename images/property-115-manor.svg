@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" preserveAspectRatio="xMidYMid slice">
+<defs><linearGradient id="mn" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D8E0DD"/><stop offset="1" stop-color="#F0E8DC"/></linearGradient></defs>
+<rect width="1200" height="900" fill="url(#mn)"/>
+<ellipse cx="100" cy="280" rx="160" ry="240" fill="#3F4E3D" opacity="0.8"/>
+<ellipse cx="1100" cy="240" rx="200" ry="280" fill="#3F4E3D" opacity="0.8"/>
+<ellipse cx="600" cy="200" rx="240" ry="180" fill="#5C6E5A" opacity="0.6"/>
+<rect y="700" width="1200" height="200" fill="#7A8E6A"/>
+<!-- Sun-lit modern shingle home -->
+<polygon points="240,460 600,300 960,460" fill="#3A2F22"/>
+<polygon points="240,460 600,300 600,460" fill="#5C4A38"/>
+<rect x="240" y="460" width="720" height="280" fill="#F0E8DC"/>
+<!-- Shingle texture -->
+<g fill="#D8C8A8" opacity="0.6">
+<rect x="240" y="475" width="720" height="2"/>
+<rect x="240" y="495" width="720" height="2"/>
+<rect x="240" y="515" width="720" height="2"/>
+<rect x="240" y="535" width="720" height="2"/>
+<rect x="240" y="555" width="720" height="2"/>
+<rect x="240" y="575" width="720" height="2"/>
+<rect x="240" y="595" width="720" height="2"/>
+<rect x="240" y="615" width="720" height="2"/>
+<rect x="240" y="635" width="720" height="2"/>
+<rect x="240" y="655" width="720" height="2"/>
+<rect x="240" y="675" width="720" height="2"/>
+<rect x="240" y="695" width="720" height="2"/>
+<rect x="240" y="715" width="720" height="2"/>
+</g>
+<!-- Large modern windows for "sun-lit" -->
+<rect x="280" y="500" width="300" height="200" fill="#E8B872" opacity="0.65"/>
+<g stroke="#3A2F22" stroke-width="2">
+<line x1="430" y1="500" x2="430" y2="700"/>
+<line x1="280" y1="600" x2="580" y2="600"/>
+</g>
+<rect x="620" y="500" width="320" height="200" fill="#E8B872" opacity="0.65"/>
+<g stroke="#3A2F22" stroke-width="2">
+<line x1="780" y1="500" x2="780" y2="700"/>
+<line x1="620" y1="600" x2="940" y2="600"/>
+</g>
+<!-- Dormer windows -->
+<polygon points="380,420 460,360 460,460 380,460" fill="#5C4A38"/>
+<polygon points="740,420 820,360 820,460 740,460" fill="#5C4A38"/>
+<rect x="395" y="395" width="50" height="50" fill="#7B8590" opacity="0.7"/>
+<rect x="755" y="395" width="50" height="50" fill="#7B8590" opacity="0.7"/>
+<!-- Charming entry -->
+<rect x="560" y="600" width="80" height="140" fill="#B05A3C"/>
+<rect x="570" y="620" width="60" height="40" fill="#E8B872" opacity="0.7"/>
+<!-- Walkway -->
+<polygon points="560,740 640,740 680,860 520,860" fill="#C8BFA8"/>
+<!-- Hedges -->
+<ellipse cx="320" cy="760" rx="80" ry="30" fill="#5C6E5A"/>
+<ellipse cx="880" cy="760" rx="80" ry="30" fill="#5C6E5A"/>
+</svg>

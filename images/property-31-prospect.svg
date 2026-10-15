@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" preserveAspectRatio="xMidYMid slice">
+<defs><linearGradient id="s4" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F0D8B0"/><stop offset="1" stop-color="#E5C895"/></linearGradient></defs>
+<rect width="1200" height="900" fill="url(#s4)"/>
+<ellipse cx="200" cy="380" rx="180" ry="240" fill="#3F4E3D" opacity="0.65"/>
+<ellipse cx="1000" cy="360" rx="200" ry="260" fill="#3F4E3D" opacity="0.65"/>
+<rect y="700" width="1200" height="200" fill="#7A8E6A"/>
+<!-- Craftsman bungalow with steep gable -->
+<polygon points="300,460 600,280 900,460" fill="#5C4A38"/>
+<g stroke="#3A2F22" stroke-width="1" opacity="0.4">
+<line x1="340" y1="440" x2="860" y2="440"/>
+<line x1="380" y1="400" x2="820" y2="400"/>
+<line x1="420" y1="360" x2="780" y2="360"/>
+<line x1="460" y1="320" x2="740" y2="320"/>
+</g>
+<!-- Walls -->
+<rect x="340" y="460" width="520" height="280" fill="#A8745A"/>
+<!-- Shingle pattern -->
+<g fill="#8E5E48" opacity="0.5">
+<rect x="340" y="480" width="520" height="2"/>
+<rect x="340" y="500" width="520" height="2"/>
+<rect x="340" y="520" width="520" height="2"/>
+<rect x="340" y="540" width="520" height="2"/>
+<rect x="340" y="560" width="520" height="2"/>
+<rect x="340" y="580" width="520" height="2"/>
+<rect x="340" y="600" width="520" height="2"/>
+<rect x="340" y="620" width="520" height="2"/>
+<rect x="340" y="640" width="520" height="2"/>
+<rect x="340" y="660" width="520" height="2"/>
+<rect x="340" y="680" width="520" height="2"/>
+<rect x="340" y="700" width="520" height="2"/>
+<rect x="340" y="720" width="520" height="2"/>
+</g>
+<!-- Porch -->
+<rect x="380" y="600" width="440" height="14" fill="#3A2F22"/>
+<rect x="400" y="600" width="20" height="140" fill="#3A2F22"/>
+<rect x="780" y="600" width="20" height="140" fill="#3A2F22"/>
+<!-- Door -->
+<rect x="560" y="620" width="80" height="120" fill="#455444"/>
+<rect x="580" y="640" width="40" height="40" fill="#7B8590" opacity="0.7"/>
+<!-- Windows with diamond panes -->
+<rect x="420" y="500" width="100" height="80" fill="#7B8590" opacity="0.8"/>
+<g stroke="#3A2F22" stroke-width="1">
+<line x1="420" y1="520" x2="520" y2="520"/>
+<line x1="420" y1="540" x2="520" y2="540"/>
+<line x1="420" y1="560" x2="520" y2="560"/>
+<line x1="445" y1="500" x2="445" y2="580"/>
+<line x1="470" y1="500" x2="470" y2="580"/>
+<line x1="495" y1="500" x2="495" y2="580"/>
+</g>
+<rect x="680" y="500" width="100" height="80" fill="#7B8590" opacity="0.8"/>
+<g stroke="#3A2F22" stroke-width="1">
+<line x1="680" y1="520" x2="780" y2="520"/>
+<line x1="680" y1="540" x2="780" y2="540"/>
+<line x1="680" y1="560" x2="780" y2="560"/>
+<line x1="705" y1="500" x2="705" y2="580"/>
+<line x1="730" y1="500" x2="730" y2="580"/>
+<line x1="755" y1="500" x2="755" y2="580"/>
+</g>
+<!-- Path and rose bushes -->
+<polygon points="580,740 620,740 660,860 540,860" fill="#C8BFA8"/>
+<ellipse cx="320" cy="780" rx="50" ry="25" fill="#5C6E5A"/>
+<circle cx="310" cy="765" r="5" fill="#B05A3C"/>
+<circle cx="330" cy="772" r="4" fill="#B05A3C"/>
+<ellipse cx="880" cy="780" rx="50" ry="25" fill="#5C6E5A"/>
+<circle cx="870" cy="765" r="5" fill="#B05A3C"/>
+<circle cx="890" cy="772" r="4" fill="#B05A3C"/>
+</svg>

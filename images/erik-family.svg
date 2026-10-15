@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1250" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sunset" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F0D8B0"/>
+      <stop offset="50%" stop-color="#E8B872"/>
+      <stop offset="100%" stop-color="#B05A3C"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="1250" fill="url(#sunset)"/>
+  <!-- Soft light bloom -->
+  <ellipse cx="500" cy="400" rx="400" ry="200" fill="#F7F2E8" opacity="0.4"/>
+  <!-- Distant mountain ridge -->
+  <path d="M 0 700 Q 200 620 400 660 T 800 640 T 1000 680 L 1000 850 L 0 850 Z" fill="#5C4A38" opacity="0.5"/>
+  <path d="M 0 760 Q 250 720 500 740 T 1000 750 L 1000 900 L 0 900 Z" fill="#3A2F22" opacity="0.7"/>
+  <!-- Ground -->
+  <rect y="850" width="1000" height="400" fill="#2A1F18"/>
+  <!-- Tall grass silhouettes foreground -->
+  <g fill="#1F1812" opacity="0.7">
+    <path d="M 50 1100 Q 55 1050 60 1100 Z"/>
+    <path d="M 100 1110 Q 105 1060 110 1110 Z"/>
+    <path d="M 150 1090 Q 155 1040 160 1090 Z"/>
+    <path d="M 850 1100 Q 855 1050 860 1100 Z"/>
+    <path d="M 900 1110 Q 905 1060 910 1110 Z"/>
+    <path d="M 950 1090 Q 955 1040 960 1090 Z"/>
+  </g>
+  <!-- Family silhouettes (backlit) -->
+  <!-- Erik (dad) -->
+  <g fill="#1F1812">
+    <ellipse cx="360" cy="700" rx="50" ry="60"/>
+    <path d="M 310 750 L 310 1050 L 410 1050 L 410 750 Q 410 740 360 740 Q 310 740 310 750 Z"/>
+    <rect x="290" y="780" width="40" height="180"/>
+    <rect x="390" y="780" width="40" height="180"/>
+    <rect x="310" y="1040" width="40" height="160"/>
+    <rect x="370" y="1040" width="40" height="160"/>
+  </g>
+  <!-- Natasha (mom) -->
+  <g fill="#1F1812">
+    <ellipse cx="640" cy="700" rx="48" ry="58"/>
+    <!-- Hair flowing -->
+    <path d="M 600 720 Q 580 800 600 880 L 620 870 Q 615 810 615 720 Z"/>
+    <path d="M 680 720 Q 700 800 680 880 L 660 870 Q 665 810 665 720 Z"/>
+    <path d="M 590 750 L 590 1000 Q 600 1050 640 1050 Q 680 1050 690 1000 L 690 750 Q 690 740 640 740 Q 590 740 590 750 Z"/>
+    <!-- Dress silhouette -->
+    <path d="M 590 1000 L 560 1200 L 720 1200 L 690 1000 Z"/>
+  </g>
+  <!-- Older boy -->
+  <g fill="#1F1812">
+    <ellipse cx="470" cy="830" rx="35" ry="42"/>
+    <path d="M 435 870 L 435 1080 L 505 1080 L 505 870 Q 505 862 470 862 Q 435 862 435 870 Z"/>
+    <rect x="425" y="900" width="22" height="130"/>
+    <rect x="493" y="900" width="22" height="130"/>
+    <rect x="438" y="1070" width="28" height="130"/>
+    <rect x="475" y="1070" width="28" height="130"/>
+  </g>
+  <!-- Younger boy (slightly smaller, holding hand) -->
+  <g fill="#1F1812">
+    <ellipse cx="540" cy="850" rx="32" ry="38"/>
+    <path d="M 510 885 L 510 1080 L 570 1080 L 570 885 Q 570 878 540 878 Q 510 878 510 885 Z"/>
+    <rect x="500" y="910" width="20" height="120"/>
+    <rect x="560" y="910" width="20" height="120"/>
+    <rect x="513" y="1070" width="25" height="130"/>
+    <rect x="545" y="1070" width="25" height="130"/>
+  </g>
+  <!-- Hand connections -->
+  <path d="M 410 940 Q 440 950 435 920" stroke="#1F1812" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <path d="M 565 940 Q 590 945 590 930" stroke="#1F1812" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <!-- Sun bloom behind -->
+  <circle cx="500" cy="450" r="80" fill="#F7F2E8" opacity="0.25"/>
+  <circle cx="500" cy="450" r="40" fill="#F7F2E8" opacity="0.5"/>
+</svg>

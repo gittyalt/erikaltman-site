@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" preserveAspectRatio="xMidYMid slice">
+<defs><linearGradient id="s3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E8D8B8"/><stop offset="1" stop-color="#C8AC85"/></linearGradient></defs>
+<rect width="1200" height="900" fill="url(#s3)"/>
+<ellipse cx="100" cy="320" rx="200" ry="280" fill="#3F4E3D" opacity="0.75"/>
+<ellipse cx="1100" cy="280" rx="220" ry="300" fill="#3F4E3D" opacity="0.75"/>
+<ellipse cx="600" cy="240" rx="240" ry="200" fill="#455444" opacity="0.5"/>
+<rect y="700" width="1200" height="200" fill="#7A8E6A"/>
+<!-- Traditional grand estate -->
+<!-- Center gable -->
+<polygon points="440,440 600,300 760,440" fill="#3A2F22"/>
+<!-- Hip roofs on wings -->
+<polygon points="200,520 280,460 920,460 1000,520 200,520" fill="#3A2F22"/>
+<polygon points="440,460 760,460 760,440 440,440" fill="#3A2F22"/>
+<!-- Walls -->
+<rect x="200" y="520" width="800" height="220" fill="#F0E8DC"/>
+<rect x="200" y="730" width="800" height="14" fill="#8E8278"/>
+<!-- Center entry with columns -->
+<rect x="540" y="540" width="120" height="200" fill="#E5D8C0"/>
+<rect x="560" y="560" width="80" height="180" fill="#3A2F22"/>
+<rect x="540" y="540" width="14" height="200" fill="#F0E8DC"/>
+<rect x="646" y="540" width="14" height="200" fill="#F0E8DC"/>
+<!-- Symmetrical windows with shutters -->
+<g>
+<rect x="260" y="560" width="80" height="120" fill="#7B8590" opacity="0.8"/>
+<rect x="244" y="560" width="14" height="120" fill="#455444"/>
+<rect x="342" y="560" width="14" height="120" fill="#455444"/>
+<line x1="300" y1="560" x2="300" y2="680" stroke="#3A2F22" stroke-width="2"/>
+<line x1="260" y1="620" x2="340" y2="620" stroke="#3A2F22" stroke-width="2"/>
+<rect x="380" y="560" width="80" height="120" fill="#7B8590" opacity="0.8"/>
+<rect x="364" y="560" width="14" height="120" fill="#455444"/>
+<rect x="462" y="560" width="14" height="120" fill="#455444"/>
+<line x1="420" y1="560" x2="420" y2="680" stroke="#3A2F22" stroke-width="2"/>
+<line x1="380" y1="620" x2="460" y2="620" stroke="#3A2F22" stroke-width="2"/>
+<rect x="740" y="560" width="80" height="120" fill="#7B8590" opacity="0.8"/>
+<rect x="724" y="560" width="14" height="120" fill="#455444"/>
+<rect x="822" y="560" width="14" height="120" fill="#455444"/>
+<line x1="780" y1="560" x2="780" y2="680" stroke="#3A2F22" stroke-width="2"/>
+<line x1="740" y1="620" x2="820" y2="620" stroke="#3A2F22" stroke-width="2"/>
+<rect x="860" y="560" width="80" height="120" fill="#7B8590" opacity="0.8"/>
+<rect x="844" y="560" width="14" height="120" fill="#455444"/>
+<rect x="942" y="560" width="14" height="120" fill="#455444"/>
+<line x1="900" y1="560" x2="900" y2="680" stroke="#3A2F22" stroke-width="2"/>
+<line x1="860" y1="620" x2="940" y2="620" stroke="#3A2F22" stroke-width="2"/>
+</g>
+<!-- Dormer in gable -->
+<rect x="560" y="380" width="80" height="60" fill="#7B8590" opacity="0.7"/>
+<!-- Entry gate piers -->
+<rect x="180" y="770" width="30" height="100" fill="#8E8278"/>
+<rect x="990" y="770" width="30" height="100" fill="#8E8278"/>
+<!-- Driveway -->
+<polygon points="540,740 660,740 720,860 480,860" fill="#9A9690"/>
+<!-- Boxwood hedges -->
+<rect x="220" y="740" width="320" height="20" fill="#5C6E5A"/>
+<rect x="660" y="740" width="320" height="20" fill="#5C6E5A"/>
+</svg>

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" preserveAspectRatio="xMidYMid slice">
+<defs><linearGradient id="el" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F0D8B0"/><stop offset="1" stop-color="#D4B89A"/></linearGradient></defs>
+<rect width="1200" height="900" fill="url(#el)"/>
+<ellipse cx="120" cy="320" rx="200" ry="280" fill="#2F3A2E" opacity="0.8"/>
+<ellipse cx="1080" cy="280" rx="220" ry="300" fill="#2F3A2E" opacity="0.8"/>
+<rect y="720" width="1200" height="180" fill="#7A8E6A"/>
+<!-- Mill Valley character home - simple gable with deck -->
+<polygon points="320,460 600,320 880,460" fill="#3A2F22"/>
+<rect x="320" y="460" width="560" height="280" fill="#5C6E5A"/>
+<!-- Board and batten -->
+<g fill="#455444">
+<rect x="340" y="460" width="6" height="280"/>
+<rect x="380" y="460" width="6" height="280"/>
+<rect x="420" y="460" width="6" height="280"/>
+<rect x="460" y="460" width="6" height="280"/>
+<rect x="500" y="460" width="6" height="280"/>
+<rect x="540" y="460" width="6" height="280"/>
+<rect x="580" y="460" width="6" height="280"/>
+<rect x="620" y="460" width="6" height="280"/>
+<rect x="660" y="460" width="6" height="280"/>
+<rect x="700" y="460" width="6" height="280"/>
+<rect x="740" y="460" width="6" height="280"/>
+<rect x="780" y="460" width="6" height="280"/>
+<rect x="820" y="460" width="6" height="280"/>
+<rect x="860" y="460" width="6" height="280"/>
+</g>
+<!-- Large window -->
+<rect x="380" y="500" width="180" height="200" fill="#E8B872" opacity="0.55"/>
+<g stroke="#1F2428" stroke-width="2">
+<line x1="470" y1="500" x2="470" y2="700"/>
+<line x1="380" y1="600" x2="560" y2="600"/>
+</g>
+<rect x="640" y="500" width="200" height="200" fill="#E8B872" opacity="0.55"/>
+<g stroke="#1F2428" stroke-width="2">
+<line x1="740" y1="500" x2="740" y2="700"/>
+<line x1="640" y1="600" x2="840" y2="600"/>
+</g>
+<!-- Elevated deck -->
+<rect x="280" y="740" width="640" height="14" fill="#5C4A38"/>
+<rect x="280" y="754" width="14" height="80" fill="#3A2F22"/>
+<rect x="906" y="754" width="14" height="80" fill="#3A2F22"/>
+<g stroke="#3A2F22" stroke-width="2">
+<line x1="320" y1="754" x2="320" y2="800"/>
+<line x1="380" y1="754" x2="380" y2="800"/>
+<line x1="440" y1="754" x2="440" y2="800"/>
+<line x1="500" y1="754" x2="500" y2="800"/>
+<line x1="560" y1="754" x2="560" y2="800"/>
+<line x1="620" y1="754" x2="620" y2="800"/>
+<line x1="680" y1="754" x2="680" y2="800"/>
+<line x1="740" y1="754" x2="740" y2="800"/>
+<line x1="800" y1="754" x2="800" y2="800"/>
+<line x1="860" y1="754" x2="860" y2="800"/>
+</g>
+<!-- Redwoods -->
+<ellipse cx="80" cy="500" rx="40" ry="200" fill="#2A3326"/>
+<ellipse cx="1120" cy="480" rx="50" ry="240" fill="#2A3326"/>
+</svg>

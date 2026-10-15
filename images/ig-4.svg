@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" preserveAspectRatio="xMidYMid slice">
+  <rect width="800" height="800" fill="#E5DCCB"/>
+  <!-- Stone wall texture -->
+  <g fill="#C8B89A">
+    <rect x="0" y="0" width="200" height="100"/>
+    <rect x="220" y="0" width="180" height="100"/>
+    <rect x="420" y="0" width="220" height="100"/>
+    <rect x="660" y="0" width="140" height="100"/>
+    <rect x="0" y="120" width="160" height="100"/>
+    <rect x="180" y="120" width="200" height="100"/>
+    <rect x="400" y="120" width="180" height="100"/>
+    <rect x="600" y="120" width="200" height="100"/>
+  </g>
+  <!-- Frame -->
+  <rect x="250" y="180" width="300" height="500" fill="#3A2F22"/>
+  <!-- Door -->
+  <rect x="270" y="200" width="260" height="460" fill="#B05A3C"/>
+  <!-- Panels -->
+  <rect x="290" y="230" width="100" height="180" fill="#9C4E32" stroke="#3A2F22" stroke-width="2"/>
+  <rect x="410" y="230" width="100" height="180" fill="#9C4E32" stroke="#3A2F22" stroke-width="2"/>
+  <rect x="290" y="430" width="100" height="180" fill="#9C4E32" stroke="#3A2F22" stroke-width="2"/>
+  <rect x="410" y="430" width="100" height="180" fill="#9C4E32" stroke="#3A2F22" stroke-width="2"/>
+  <!-- Knob -->
+  <circle cx="490" cy="430" r="8" fill="#E8B872"/>
+  <!-- Door number -->
+  <rect x="380" y="160" width="40" height="20" fill="#3A2F22"/>
+  <!-- Path -->
+  <rect y="700" width="800" height="100" fill="#9A9690"/>
+  <!-- Foliage on side -->
+  <ellipse cx="100" cy="680" rx="120" ry="60" fill="#5C6E5A"/>
+  <ellipse cx="700" cy="680" rx="120" ry="60" fill="#5C6E5A"/>
+</svg>
