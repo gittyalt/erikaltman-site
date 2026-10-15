@@ -173,6 +173,22 @@
       "description": "A sun-lit, updated five-bedroom home in the coveted Boyle Park neighborhood of Mill Valley. Bright, open living spaces and walking distance to downtown, hiking trails, and top-rated schools."
     },
     {
+      "id": "419-los-cerros",
+      "status": "SOLD",
+      "address": "419 Los Cerros Drive",
+      "city": "Greenbrae, CA 94904",
+      "sqft": 0,
+      "beds": 0,
+      "baths": 0,
+      "price": 3100000,
+      "representation": "Buyer Representation · Off-Market Sale",
+      "image": "images/photos/419-los-cerros/01.jpg",
+      "gallery": [
+        "images/photos/419-los-cerros/01.jpg"
+      ],
+      "description": "An off-market transaction on Los Cerros Drive in Greenbrae. Sourced privately and closed discreetly outside the MLS. Details available upon request."
+    },
+    {
       "id": "3532-eagle-point",
       "status": "SOLD",
       "address": "3532 Eagle Point Road",
@@ -468,22 +484,6 @@
         "images/photos/1600-rancho/07.jpg"
       ],
       "description": "An off-market transaction on the prestigious Rancho Del Hambre ridge in Reliez Valley. Oak-studded acreage with sweeping valley views, conveniently located near downtown Lafayette and BART. Details available upon request."
-    },
-    {
-      "id": "419-los-cerros",
-      "status": "SOLD",
-      "address": "419 Los Cerros Drive",
-      "city": "Greenbrae, CA 94904",
-      "sqft": 0,
-      "beds": 0,
-      "baths": 0,
-      "price": 0,
-      "representation": "Buyer Representation · Off-Market Sale",
-      "image": "images/photos/419-los-cerros/01.jpg",
-      "gallery": [
-        "images/photos/419-los-cerros/01.jpg"
-      ],
-      "description": "An off-market transaction on Los Cerros Drive in Greenbrae. Sourced privately and closed discreetly outside the MLS. Details available upon request."
     }
   ],
   "developments": [
