@@ -9,6 +9,9 @@
   const GOOGLE_MAPS_KEY = 'AIzaSyAwd3BZmpwI4WkLIssLC_kJV2Cb5YcYBGs';
   // Erik's Google Business Profile Place ID (starts with "ChIJ").
   const PLACE_ID = 'ChIJsU1W-oR5OakR91dSJVthaXY';
+  // Display order by reviewer name (as shown on Google). Any review Google
+  // returns that isn't listed here appears after these, in Google's order.
+  const ORDER = ['Eric Englund', 'Ashley Busacca', 'Ryan Darcey', 'Emily Flynn', 'Richard H'];
 
   const section = document.getElementById('reviews');
   if (!section || !GOOGLE_MAPS_KEY || !PLACE_ID) return;
@@ -65,7 +68,17 @@
       const place = new Place({ id: PLACE_ID });
       await place.fetchFields({ fields: ['rating', 'userRatingCount', 'reviews', 'googleMapsURI'] });
 
-      const reviews = (place.reviews || []).filter(r => r && (r.text || r.rating));
+      const norm = n => (n || '').toLowerCase().replace(/[^a-z0-9 ]/g, '').replace(/\s+/g, ' ').trim();
+      const rank = r => {
+        const name = norm(r.authorAttribution && r.authorAttribution.displayName);
+        const i = ORDER.findIndex(o => name === norm(o) || name.startsWith(norm(o) + ' '));
+        return i === -1 ? ORDER.length : i;
+      };
+      const reviews = (place.reviews || [])
+        .filter(r => r && (r.text || r.rating))
+        .map((r, i) => ({ r, i }))
+        .sort((a, b) => (rank(a.r) - rank(b.r)) || (a.i - b.i))
+        .map(x => x.r);
       if (!reviews.length) return;
 
       reviews.forEach(r => track.append(card(r)));
