@@ -12,6 +12,8 @@
   // Display order by reviewer name (as shown on Google). Any review Google
   // returns that isn't listed here appears after these, in Google's order.
   const ORDER = ['Eric Englund', 'Ashley Busacca', 'Ryan Darcey', 'Emily Flynn', 'Richard H'];
+  // Reviewers to leave out of the homepage carousel.
+  const HIDE = ['Aaron Tidman', 'Christopher Westcott', 'Morgan Shorum'];
 
   const section = document.getElementById('reviews');
   if (!section || !GOOGLE_MAPS_KEY || !PLACE_ID) return;
@@ -76,6 +78,10 @@
       };
       const reviews = (place.reviews || [])
         .filter(r => r && (r.text || r.rating))
+        .filter(r => {
+          const name = norm(r.authorAttribution && r.authorAttribution.displayName);
+          return !HIDE.some(h => name === norm(h) || name.startsWith(norm(h) + ' '));
+        })
         .map((r, i) => ({ r, i }))
         .sort((a, b) => (rank(a.r) - rank(b.r)) || (a.i - b.i))
         .map(x => x.r);
