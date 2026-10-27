@@ -188,5 +188,11 @@ async function renderPropertyDetail(devMode = false) {
       </aside>
     </div>
   `;
-  document.title = `${p.address} — Erik Altman`;
+  const place = (p.city || '').replace(/,?\s*CA\s*\d{5}$/, '').trim();
+  document.title = `${p.address}${place ? ', ' + place : ''} | Erik Altman Marin Real Estate`;
+  const metaDesc = document.querySelector('meta[name="description"]');
+  if (metaDesc && p.description) metaDesc.setAttribute('content', p.description.slice(0, 155));
+  let canon = document.querySelector('link[rel="canonical"]');
+  if (!canon) { canon = document.createElement('link'); canon.rel = 'canonical'; document.head.append(canon); }
+  canon.href = `https://erikaltman.com/${devMode ? 'development' : 'property'}?id=${encodeURIComponent(p.id)}`;
 }
