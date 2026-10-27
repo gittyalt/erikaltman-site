@@ -888,6 +888,20 @@ a.review-name:hover { color: var(--canyon-brick); }
 }
 .contact-image img { width: 100%; height: 100%; object-fit: cover; }
 
+.contact-map {
+  margin-top: 32px;
+  aspect-ratio: 4 / 3;
+  max-width: 100%;
+  background: var(--limestone-deep);
+  border: 1px solid var(--hairline);
+  overflow: hidden;
+}
+.contact-map iframe {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
+
 .contact-links {
   list-style: none;
   margin-top: 40px;
