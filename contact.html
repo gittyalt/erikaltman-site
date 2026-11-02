@@ -21,7 +21,8 @@
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="css/styles.css?v=20261102b">
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+  <link rel="stylesheet" href="css/styles.css?v=20261102c">
 </head>
 <body>
 
@@ -99,8 +100,13 @@
         <p class="contact-dre fade-up d3">Boulevard Real Estate · DRE# 02212282</p>
       </div>
 
-      <div class="contact-map fade-up d3">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5214.771077220923!2d-122.55250728727279!3d37.95220510180022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa9397984fa564db1%3A0x7669615b255257f7!2sErik%20Altman%20Properties!5e0!3m2!1sen!2sus!4v1793120506481!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">luxury marin real estate expert kentfield larkspur san anselmo ross greenbrae tiburon mill valley</iframe>
+      <div class="contact-map-wrap fade-up d3">
+        <div class="contact-map" id="contact-map" role="region" aria-label="Map of Erik Altman's sales and listings"></div>
+        <ul class="map-legend">
+          <li><span class="map-pin map-pin--sold"></span>Sold</li>
+          <li><span class="map-pin map-pin--active"></span>Active listing</li>
+          <li><span class="map-pin map-pin--office"><img src="images/blvd-mark.svg" alt=""></span>Office</li>
+        </ul>
       </div>
     </section>
   </main>
@@ -134,6 +140,8 @@
     </div>
   </footer>
 
+  <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+  <script src="js/contact-map.js?v=20261102c" defer></script>
   <script src="js/site.js?v=20261027a"></script>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
