@@ -10,6 +10,7 @@
       "baths": 5,
       "price": 6850000,
       "year_built": 2006,
+      "representation": "Buyer Representation · Off-Market Sale",
       "image": "images/photos/107-diablo/01.jpg",
       "gallery": [
         "images/photos/107-diablo/01.jpg"
@@ -50,6 +51,7 @@
       "baths": 4,
       "price": 5100000,
       "year_built": 1957,
+      "representation": "Seller Representation",
       "image": "images/photos/46-birch/01.jpg",
       "gallery": [
         "images/photos/46-birch/02.jpg",
@@ -73,6 +75,7 @@
       "baths": 3.5,
       "price": 4600000,
       "year_built": 1957,
+      "representation": "Seller Representation · Off-Market Sale",
       "image": "images/photos/38-birch/01.jpg",
       "gallery": [
         "images/photos/38-birch/01.jpg"
@@ -113,6 +116,7 @@
       "baths": 3,
       "price": 3692500,
       "year_built": 1960,
+      "representation": "Seller Representation · Off-Market Sale",
       "image": "images/photos/50-via-la-paz/01.jpg",
       "gallery": [
         "images/photos/50-via-la-paz/02.jpg",
