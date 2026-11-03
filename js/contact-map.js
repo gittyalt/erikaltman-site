@@ -153,6 +153,10 @@
     .setPopup(new maplibregl.Popup({ offset: 20, maxWidth: '260px', focusAfterOpen: false }).setDOMContent(officePop))
     .addTo(map);
 
+  // Opening view frames only the Marin pins; SF and East Bay pins are a zoom-out away.
+  // Rough Marin County box: north of the Golden Gate, west of the bay.
+  const inMarin = p => p.lat > 37.82 && p.lat < 38.33 && p.lng < -122.43 && p.lng > -123.05;
+
   fetch('data/properties.json', { cache: 'no-cache' })
     .then(r => r.json())
     .then(data => {
@@ -171,7 +175,7 @@
         if (group.length > 1) node.append(el('span', 'map-pin-count', String(group.length)));
         node.title = group.length > 1 ? p.address.replace(/\s*#.*$/, '') : p.address;
         new maplibregl.Marker({ element: node }).setLngLat([p.lng, p.lat]).setPopup(popupFor(group)).addTo(map);
-        bounds.extend([p.lng, p.lat]);
+        if (inMarin(p)) bounds.extend([p.lng, p.lat]);
       });
       map.fitBounds(bounds, { padding: 50, maxZoom: 13, duration: 0 });
     })
