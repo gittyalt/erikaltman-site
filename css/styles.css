@@ -1159,3 +1159,6 @@ a.review-name:hover { color: var(--canyon-brick); }
   letter-spacing: -0.02em;
   color: var(--slate);
 }
+
+/* Google Preferred Sources button (rendered by news.google.com publisher.js) */
+.footer-preferred-source { margin-top: 22px; min-height: 40px; }
