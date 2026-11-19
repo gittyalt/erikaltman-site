@@ -63,12 +63,20 @@ function statusClass(status) {
   return status.toLowerCase().replace(/\s+/g, '-');
 }
 
+/* A stat is shown when it's a positive number, or a string placeholder such as "—" */
+function hasStat(v) { return (typeof v === 'number' && v > 0) || (typeof v === 'string' && v.trim() !== ''); }
+function fmtStat(v) { return typeof v === 'number' ? v.toLocaleString() : v; }
+
 /* ---------- Render Property Card ---------- */
 function renderPropertyCard(p, opts = {}) {
   const { hideBadge = false, hideRep = false, hidePrice = false, linkBase = 'property.html' } = opts;
-  const hasSpecs = p.sqft > 0 || p.beds > 0 || p.baths > 0;
-  const specs = hasSpecs
-    ? `${p.sqft > 0 ? p.sqft.toLocaleString() + ' sq.ft.' : ''}${p.sqft > 0 && p.beds > 0 ? ' <span>·</span> ' : ''}${p.beds > 0 ? p.beds + ' BD' : ''}${p.beds > 0 && p.baths > 0 ? ' <span>·</span> ' : ''}${p.baths > 0 ? p.baths + ' BA' : ''}`
+  const parts = [
+    hasStat(p.sqft) ? fmtStat(p.sqft) + ' sq.ft.' : '',
+    hasStat(p.beds) ? fmtStat(p.beds) + ' BD' : '',
+    hasStat(p.baths) ? fmtStat(p.baths) + ' BA' : ''
+  ].filter(Boolean);
+  const specs = parts.length
+    ? parts.join(' <span>·</span> ')
     : '<em style="opacity:0.7;">Details available upon request</em>';
   return `
     <a class="property-card" href="${linkBase}?id=${p.id}">
@@ -164,15 +172,15 @@ async function renderPropertyDetail(devMode = false) {
       </div>
       <aside class="property-detail-sidebar">
         <dl>
-          ${p.sqft > 0 ? `<div>
+          ${hasStat(p.sqft) ? `<div>
             <dt>Square Footage</dt>
-            <dd>${p.sqft.toLocaleString()}</dd>
+            <dd>${fmtStat(p.sqft)}</dd>
           </div>` : ''}
-          ${p.beds > 0 ? `<div>
+          ${hasStat(p.beds) ? `<div>
             <dt>Bedrooms</dt>
             <dd>${p.beds}</dd>
           </div>` : ''}
-          ${p.baths > 0 ? `<div>
+          ${hasStat(p.baths) ? `<div>
             <dt>Bathrooms</dt>
             <dd>${p.baths}</dd>
           </div>` : ''}

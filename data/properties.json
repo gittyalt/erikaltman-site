@@ -211,6 +211,31 @@
       "description": "An off-market transaction on Los Cerros Drive in Greenbrae. Sourced privately and closed discreetly outside the MLS. Details available upon request."
     },
     {
+      "id": "206-mcallister",
+      "status": "SOLD",
+      "address": "206 McAllister Avenue",
+      "city": "Kentfield, CA 94904",
+      "lat": 37.95205,
+      "lng": -122.543205,
+      "sqft": "—",
+      "beds": 4,
+      "baths": 3.5,
+      "price": 3050000,
+      "year_built": 1945,
+      "representation": "Buyer Representation",
+      "image": "images/photos/206-mcallister/01.jpg",
+      "gallery": [
+        "images/photos/206-mcallister/02.jpg",
+        "images/photos/206-mcallister/03.jpg",
+        "images/photos/206-mcallister/04.jpg",
+        "images/photos/206-mcallister/05.jpg",
+        "images/photos/206-mcallister/06.jpg",
+        "images/photos/206-mcallister/07.jpg",
+        "images/photos/206-mcallister/08.jpg"
+      ],
+      "description": "A level, sun-filled 0.42-acre parcel above McAllister Avenue in one of Kentfield's most sought-after neighborhoods, with Mt. Tam views, mature oaks, and a detached studio cottage and vintage barn said to date to the historic McAllister Estate. Acquired as a rebuild site for a new custom residence, close to Bacich Elementary, Kent Middle School, Marin Catholic, and College of Marin."
+    },
+    {
       "id": "3532-eagle-point",
       "status": "SOLD",
       "address": "3532 Eagle Point Road",
