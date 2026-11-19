@@ -203,4 +203,86 @@ async function renderPropertyDetail(devMode = false) {
   let canon = document.querySelector('link[rel="canonical"]');
   if (!canon) { canon = document.createElement('link'); canon.rel = 'canonical'; document.head.append(canon); }
   canon.href = `https://erikaltman.com/${devMode ? 'development' : 'property'}?id=${encodeURIComponent(p.id)}`;
+
+  initLightbox(target, p);
+}
+
+/* ---------- Photo lightbox (property & development detail pages) ---------- */
+function initLightbox(root, p) {
+  const photos = [...new Set([p.image, ...(p.gallery || [])].filter(Boolean))];
+  if (!photos.length) return;
+
+  let box = document.querySelector('.lightbox');
+  if (!box) {
+    box = document.createElement('div');
+    box.className = 'lightbox';
+    box.setAttribute('role', 'dialog');
+    box.setAttribute('aria-modal', 'true');
+    box.setAttribute('aria-label', 'Photo gallery');
+    box.hidden = true;
+    box.innerHTML = `
+      <button class="lightbox-close" type="button" aria-label="Close">&times;</button>
+      <button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous photo">&#8249;</button>
+      <figure class="lightbox-stage"><img alt=""></figure>
+      <button class="lightbox-nav lightbox-next" type="button" aria-label="Next photo">&#8250;</button>
+      <div class="lightbox-count"></div>`;
+    document.body.append(box);
+  }
+  const img = box.querySelector('img');
+  const count = box.querySelector('.lightbox-count');
+  const multi = photos.length > 1;
+  box.querySelectorAll('.lightbox-nav').forEach(b => { b.hidden = !multi; });
+  let idx = 0, lastFocus = null;
+
+  const show = (i) => {
+    idx = (i + photos.length) % photos.length;
+    img.src = photos[idx];
+    img.alt = `${p.address} — photo ${idx + 1} of ${photos.length}`;
+    count.textContent = multi ? `${idx + 1} / ${photos.length}` : '';
+    [idx + 1, idx - 1].forEach(j => { const pre = new Image(); pre.src = photos[(j + photos.length) % photos.length]; });
+  };
+  const open = (i) => {
+    lastFocus = document.activeElement;
+    show(i);
+    box.hidden = false;
+    document.body.style.overflow = 'hidden';
+    box.querySelector('.lightbox-close').focus();
+  };
+  const close = () => {
+    box.hidden = true;
+    document.body.style.overflow = '';
+    if (lastFocus) lastFocus.focus();
+  };
+
+  box.onclick = (e) => {
+    if (e.target.closest('.lightbox-prev')) return show(idx - 1);
+    if (e.target.closest('.lightbox-next')) return show(idx + 1);
+    if (e.target.closest('.lightbox-close') || !e.target.closest('img')) close();
+  };
+  box.onkeydown = null;
+  document.removeEventListener('keydown', box._keys || (() => {}));
+  box._keys = (e) => {
+    if (box.hidden) return;
+    if (e.key === 'Escape') close();
+    else if (e.key === 'ArrowRight') show(idx + 1);
+    else if (e.key === 'ArrowLeft') show(idx - 1);
+  };
+  document.addEventListener('keydown', box._keys);
+
+  let startX = null;
+  box.ontouchstart = (e) => { startX = e.touches[0].clientX; };
+  box.ontouchend = (e) => {
+    if (startX === null) return;
+    const dx = e.changedTouches[0].clientX - startX;
+    startX = null;
+    if (Math.abs(dx) > 40) show(idx + (dx < 0 ? 1 : -1));
+  };
+
+  root.querySelectorAll('.property-hero-main img, .property-gallery img').forEach(el => {
+    const i = Math.max(0, photos.indexOf(el.getAttribute('src')));
+    el.style.cursor = 'zoom-in';
+    el.tabIndex = 0;
+    el.addEventListener('click', () => open(i));
+    el.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(i); } });
+  });
 }
